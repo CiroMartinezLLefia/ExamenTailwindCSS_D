@@ -9,13 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .section-title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 26px;
+            line-height: 100%;
+            color: #282831;
+        }
+        .section-title.white{ color: #ffffff; }
+        .custom-section{
+            padding: 48px 102px;
+            gap: 24px;
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    </style>
 </head>
 <body>
     <!-- Nav Bar -->
     <nav class="bg-white p-4">
         <div class="container mx-auto flex items-center justify-between">
             <a href="#" class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">ConcertHub</a>
-            <div class="flex items-center space-x-2" style="width: 626px; height: 56px;">
+            <div class="hidden md:flex items-center space-x-2" style="width: 626px; height: 56px;">
                 <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
                     <img src="imgs/call.png" alt="Contacto" class="w-5 h-5 mr-2">
                     <span>Contact us</span>
@@ -42,6 +60,14 @@
                     </button>
                 </div>
             </div>
+            <div class="flex md:hidden items-center space-x-4">
+                <button aria-label="User" class="p-2 rounded-full bg-white shadow">
+                    <img src="imgs/ResponsivePFP.png" alt="user" class="w-6 h-6">
+                </button>
+                <button aria-label="Open menu" class="p-2 rounded-full bg-white shadow">
+                    <img src="imgs/ResponsiveMenu.png" alt="menu" class="w-6 h-6">
+                </button>
+            </div>
         </div>
     </nav>
     <main class="max-w-7xl mx-auto px-6 py-12">
@@ -51,7 +77,7 @@
                     <h1 class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">Beyoncé Live in Concert!</h1>
                     <h2 class="text-2xl text-gray-700 mb-4">A Night to Remember!</h2>
                     <p class="text-base text-gray-600 mb-6 max-w-xl">Get ready for an extraordinary night with Beyoncé with breathtaking performances and unforgettable moments.</p>
-                    <p class="text-base text-gray-600 mb-6">Don’t wait – secure your tickets</p>
+                    <p class="text-base text-gray-600 mb-6">Don’t wait - secure your tickets</p>
                     <button class="bg-[#FF007A] text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-95 transition duration-200">Get Ticket</button>
                 </div>
 
@@ -59,9 +85,9 @@
                     <p class="text-lg mb-4">Find your favorite concert</p>
                     <div class="relative w-full max-w-lg">
                         <input type="text" placeholder="Search by Artist, Event or Venue" class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-700 placeholder-gray-300 text-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-pink-400">
-                                                <div class="absolute left-3 top-3 text-gray-400">
-                                                        <img src="imgs/arrowIcon.png" alt="search" class="w-5 h-5 opacity-50">
-                                                </div>
+                        <div class="absolute left-3 top-3 text-gray-400">
+                                <img src="imgs/arrowIcon.png" alt="search" class="w-5 h-5 opacity-50">
+                        </div>
                     </div>
                     <div class="mt-6 flex flex-wrap gap-3">
                         <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Summer</button>
@@ -77,9 +103,9 @@
             </div>
         </section>
 
-         <section>
+         <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold text-gray-800">Upcoming Concerts</h2>
+                    <h2 class="section-title">Upcoming Concerts</h2>
                     <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -122,9 +148,9 @@
                 </div>
          </section>
 
-         <section></section>
+         <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold text-gray-800">Popular near you</h2>
+                    <h2 class="section-title">Popular near you</h2>
                     <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -167,9 +193,9 @@
                 </div>
          </section>
 
-         <section>
+         <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold text-gray-800">Explore by Category</h2>
+                    <h2 class="section-title">Explore by Category</h2>
                     <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -211,9 +237,9 @@
                 </div>
          </section>
 
-          <section>
+          <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold text-gray-800">Artists</h2>
+                    <h2 class="section-title">Artists</h2>
                 </div>
                 <div class="relative">
                     <div class="overflow-hidden">
@@ -250,9 +276,9 @@
                 </div>
           </section>
 
-          <section class="bg-[#282831]">
+          <section class="bg-[#282831] custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold text-gray-800">The latest in music, tours & artists</h2>
+                    <h2 class="section-title white">The latest in music, tours & artists</h2>
                     <a href="#" class="text-sm text-gray-500 hover:text-gray-700">Explore All</a>
                 </div>
                 <p class="text-gray-600 mb-6">Uncovering the hottest music, breaking tour news, and artist spotlights</p>
@@ -305,9 +331,9 @@
                 </div>
           </section>
 
-            <section class="py-12 bg-gray-50">
+            <section class="py-12 bg-gray-50 custom-section" data-top="24px">
                 <div class="max-w-6xl mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-2">What our customers say</h2>
+                    <h2 class="section-title mb-2">What our customers say</h2>
                     <p class="text-gray-600 mb-8">Real reviews from concert enthusiasts who love our service</p>
 
                     <div class="relative">
@@ -392,21 +418,21 @@
     <footer>
         <section>
             <div class="bg-[#282831] text-gray-300 py-12">
-                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
                     <div>
                         <h3 class="text-lg font-semibold mb-4">Let's keep in touch</h3>
                         <p class="text-sm mb-4">Stay updated with Concert Hub's latest news and exclusive offers!</p>
                         <div class="flex">
-                            <input type="email" placeholder="Enter your email address" class="w-full px-4 py-2 rounded-l-lg bg-gray-700 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-400">
-                            <button class="bg-[#FF007A] text-white px-4 py-2 rounded-r-lg hover:opacity-95 transition duration-200">Subscribe Now</button>
+                            <input type="email" placeholder="Enter your email address" class="w-full px-4 py-2 rounded-l-3xl bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <button class="bg-[#FF007A] text-white px-4 py-2 rounded-r-3xl hover:opacity-95 transition duration-200">Subscribe Now</button>
                         </div>
                         <p class="text-xs mt-2">By subscribing, you agree to our <a href="#" class="underline text-gray-300 hover:text-gray-100">terms and conditions</a> & <a href="#" class="underline text-gray-300 hover:text-gray-100">Privacy Policy</a></p>
                         <div class="flex mt-4 gap-4">
-                            <a href="#" class="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">
+                            <a href="#" class="flex items-center gap-2 bg-white px-8 py-1 rounded-3xl hover:bg-white-600 text-gray-800">
                                 <img src="imgs/googleplay.png" alt="Google Play" class="w-5 h-5">
                                 <span class="text-sm">Download on the Google Play</span>
                             </a>
-                            <a href="#" class="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">
+                            <a href="#" class="flex items-center gap-2 bg-white px-8 py-1 rounded-3xl hover:bg-white-600 text-gray-800">
                                 <img src="imgs/appstore.png" alt="App Store" class="w-5 h-5">
                                 <span class="text-sm">Download on the App Store</span>
                             </a>
@@ -440,11 +466,30 @@
                             <li><a href="#" class="hover:underline">Rescheduled Events</a></li>
                         </ul>
                     </div>
+                    <div class="flex flex-col items-center mt-8 gap-4">
+                        <a href="#" class="hover:opacity-75">
+                            <img src="imgs/instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-75">
+                            <img src="imgs/youtube.png" alt="YouTube" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-75">
+                            <img src="imgs/x.png" alt="X" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-75">
+                            <img src="imgs/spotify.png" alt="Spotify" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-75">
+                            <img src="imgs/facebook.png" alt="Facebook" class="w-6 h-6">
+                        </a>
+                    </div>
                 </div>
+                <!-- new column, a list of images (like socials), no text, only 5 images, insta, youtube, x, spotify, facebook, it will be top to bottom, not left to right -->
                 <div class="text-center mt-8 text-gray-600">
                     <span class="inline-flex items-center gap-2">ConcertHub All Rights Reserved <img src="imgs/copyright.png" alt="copyright" class="w-4 h-4"></span>
                 </div>
         </section>
+
     </footer>
 </body>
 </html>
