@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Examen TailwindCSS</title>
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">ConcertHub</a>
+            <div class="flex items-center space-x-2" style="width: 626px; height: 56px;">
+                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                    <img src="imgs/call.png" alt="Contacto" class="w-5 h-5 mr-2">
+                    <span>Contact us</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                    <img src="imgs/ticket.png" alt="Ticket" class="w-5 h-5 mr-2">
+                    <span>Ticket</span>
+                </a>
+                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                    <img src="imgs/document.png" alt="Blogs" class="w-5 h-5 mr-2">
+                    <span>Blogs</span>
+                </a>
+                <div class="relative inline-block">
+                    <button class="flex items-center text-gray-300 hover:text-black px-3 focus:outline-none">
+                        <span class="mr-2">En</span>
+                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="ml-4" style="width: 124px; height: 56px; border-radius: 16px;">
+                    <button class="flex items-center justify-center w-32 h-14 bg-[#4651C9] text-white rounded-lg px-4 py-2 text-lg font-medium;">
+                        <img src="imgs/user.png" alt="User" class="w-5 h-5 mr-2 width: 24px; height: 24px;">
+                        <span class="text-white font-medium text-lg" style="font-size: 20px;">Login</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+            <div class="flex flex-col justify-between">
+                <div class="bg-white p-10 rounded-tr-3xl rounded-br-3xl md:rounded-tr-none md:rounded-br-none">
+                    <h1 class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">Beyoncé Live in Concert!</h1>
+                    <h2 class="text-2xl text-gray-700 mb-4">A Night to Remember!</h2>
+                    <p class="text-base text-gray-600 mb-6 max-w-xl">Get ready for an extraordinary night with Beyoncé with breathtaking performances and unforgettable moments.</p>
+                    <p class="text-base text-gray-600 mb-6">Don’t wait – secure your tickets</p>
+                    <button class="bg-[#FF007A] text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-95 transition duration-200">Get Ticket</button>
+                </div>
+
+                <div class="mt-8 bg-gray-800 text-gray-200 p-8 rounded-2xl">
+                    <p class="text-lg mb-4">Find your favorite concert</p>
+                    <div class="relative w-full max-w-lg">
+                        <input type="text" placeholder="Search by Artist, Event or Venue" class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-700 placeholder-gray-300 text-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-pink-400">
+                        <div class="absolute left-3 top-3 text-gray-400">
+                            <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Summer</button>
+                        <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Jazz</button>
+                        <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#TaylorSwift</button>
+                        <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#NewYork</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-3xl md:rounded-l-3xl md:rounded-r-none">
+                <img src="imgs/BannerPhoto.png" alt="Beyoncé Live in Concert" class="w-full h-full min-h-[520px] object-cover">
+            </div>
+        </section>
+
+         <section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold text-gray-800">Upcoming Concerts</h2>
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Carta concierto 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Taylor.png" alt="Taylor Swift Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Taylor Swift</h3>
+                            <p class="text-sm text-gray-600">New York City</p>
+                            <p class="text-sm text-gray-600">Dec 14, 21:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Celine.png" alt="Celine Dion Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Celine Dion</h3>
+                            <p class="text-sm text-gray-600">San Francisco</p>
+                            <p class="text-sm text-gray-600">Dec 13, 21:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Justin.png" alt="Justin Bieber Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Justin Bieber</h3>
+                            <p class="text-sm text-gray-600">San Diego</p>
+                            <p class="text-sm text-gray-600">Dec 16, 20:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Sila.png" alt="Sila Gencoglu Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Sila Gencoglu</h3>
+                            <p class="text-sm text-gray-600">Boston</p>
+                            <p class="text-sm text-gray-600">Dec 18, 22:00</p>
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+         <section></section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold text-gray-800">Popular near you</h2>
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Carta concierto 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Jennifer.png" alt="Jennifer Lopez Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Jennifer Lopez</h3>
+                            <p class="text-sm text-gray-600">Seattle</p>
+                            <p class="text-sm text-gray-600">Dec 12, 21:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Zack.png" alt="Zach Bryan Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Zach Bryan</h3>
+                            <p class="text-sm text-gray-600">Miami</p>
+                            <p class="text-sm text-gray-600">Dec 8, 22:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Usher.png" alt="Usher Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Usher</h3>
+                            <p class="text-sm text-gray-600">Los Angeles</p>
+                            <p class="text-sm text-gray-600">Dec 4, 21:00</p>
+                        </div>
+                    </div>
+                    <!-- Carta concierto 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/Adele.png" alt="Adele Concert" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Adele</h3>
+                            <p class="text-sm text-gray-600">Las Vegas</p>
+                            <p class="text-sm text-gray-600">Dec 3, 21:35</p>
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+         <section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold text-gray-800">Explore by Category</h2>
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <!-- Carta categoría 1 -->
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="imgs/Folk.png" alt="Folk Music" class="w-full h-48 object-cover">
+                        <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
+                            <h3 class="text-lg font-semibold text-white">Folk</h3>
+                        </div>
+                    </div>
+                    <!-- Carta categoría 2 -->
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="imgs/Classic.png" alt="Classical Music" class="w-full h-48 object-cover">
+                        <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
+                            <h3 class="text-lg font-semibold text-white">Classical</h3>
+                        </div>
+                    </div>
+                    <!-- Carta categoría 3 -->
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="imgs/Pop.png" alt="Pop Music" class="w-full h-48 object-cover">
+                        <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
+                            <h3 class="text-lg font-semibold text-white">Pop</h3>
+                        </div>
+                    </div>
+                    <!-- Carta categoría 4 -->
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="imgs/Jazz.png" alt="Jazz Music" class="w-full h-48 object-cover">
+                        <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
+                            <h3 class="text-lg font-semibold text-white">Jazz</h3>
+                        </div>
+                    </div>
+                    <!-- Carta categoría 5 -->
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="imgs/Rock.png" alt="Rock Music" class="w-full h-48 object-cover">
+                        <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
+                            <h3 class="text-lg font-semibold text-white">Rock</h3>
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+          <section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold text-gray-800">Artists</h2>
+                </div>
+                <div class="relative">
+                    <div class="overflow-hidden">
+                        <div class="flex items-center space-x-4 overflow-x-auto py-4 px-8">
+                            <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista1.png" alt="Artist 1" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista2.png" alt="Artist 2" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista3.png" alt="Artist 3" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista4.png" alt="Artist 4" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista5.png" alt="Artist 5" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista6.png" alt="Artist 6" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                    <img src="imgs/artista7.png" alt="Artist 7" class="w-full h-full object-cover">
+                                </div>
+                        </div>
+                    </div>
+                    <button aria-label="Scroll left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -ml-3 hover:bg-gray-50 focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button aria-label="Scroll right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -mr-3 hover:bg-gray-50 focus:outline-none">
+                        <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                </div>
+          </section>
+
+          <section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold text-gray-800">The latest in music, tours & artists</h2>
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">Explore All</a>
+                </div>
+                <p class="text-gray-600 mb-6">Uncovering the hottest music, breaking tour news, and artist spotlights</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Carta 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/carta1.jpg" alt="News 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">105 Comments</span>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <img src="imgs/eye.png" alt="views" class="w-4 h-4 mr-1 inline-block">
+                                    <span>100K</span>
+                                </div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Ariana Grande: A Pop Sensation Redefining the Music Industry</h3>
+                            <p class="text-sm text-gray-600">Ariana Grande has become a household name, dominating the music industry with her powerful vocals, relatable lyrics, and charismatic persona.</p>
+                        </div>
+                    </div>
+                    <!-- Carta 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/carta2.png" alt="News 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">35 Comments</span>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <img src="imgs/eye.png" alt="views" class="w-4 h-4 mr-1 inline-block">
+                                    <span>10K</span>
+                                </div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Rihanna Performs First Concert in Eight Years at Pre-Wedding Party in India</h3>
+                            <p class="text-sm text-gray-600">Rihanna hit the stage at a lavish pre-wedding event in India to perform her first concert in nearly eight years.</p>
+                        </div>
+                    </div>
+                    <!-- Carta 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="imgs/carta3.png" alt="News 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">85 Comments</span>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <img src="imgs/eye.png" alt="views" class="w-4 h-4 mr-1 inline-block">
+                                    <span>15K</span>
+                                </div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Azealia Banks Announces Back To The Union Jack UK Tour For September</h3>
+                            <p class="text-sm text-gray-600">The New York singer and rapper will kick off her Back To The Union Jack Tour at London's O2 Academy Brixton, before stops in Bristol, Leeds, Glasgow, Birmingham, Liverpool and Manchester. Tickets go on general sale at 10am on Thursday (May 10).</p>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          
+    </main>
+    <!-- Testimonial Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">What our customers say</h2>
+            <p class="text-gray-600 mb-8">Real reviews from concert enthusiasts who love our service</p>
+
+            <div class="relative">
+                <button aria-label="Prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -ml-3 hover:bg-gray-50 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+
+                <div class="flex gap-6 overflow-x-auto pb-6">
+                    <!-- Card 1 -->
+                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
+                        <div class="absolute -top-8 left-6">
+                            <img src="imgs/artista1.png" alt="Avatar 1" class="w-16 h-16 rounded-full border-4 border-white shadow">
+                        </div>
+                        <div class="p-6 pt-10">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Sousan Cruse</h3>
+                                    <p class="text-pink-500 text-2xl font-bold">66</p>
+                                </div>
+                                <div class="text-pink-400">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 mt-4">highly recommended ! Here I can send my friends gift cards so they can buy their favourite concerts! This is how I surprised my gf &lt;3 &lt;3</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (quote flipped) -->
+                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
+                        <div class="absolute -top-8 left-6">
+                            <img src="imgs/artista2.png" alt="Avatar 2" class="w-16 h-16 rounded-full border-4 border-white shadow">
+                        </div>
+                        <div class="p-6 pt-10">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Paula Green</h3>
+                                    <p class="text-pink-500 text-2xl font-bold">66</p>
+                                </div>
+                                <div class="text-pink-400" style="transform: scaleX(-1);">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 mt-4">I have bought my tickets many times from here, the experience is great, having the ticket saved in my application was calming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
+                        <div class="absolute -top-8 left-6">
+                            <img src="imgs/artista3.png" alt="Avatar 3" class="w-16 h-16 rounded-full border-4 border-white shadow">
+                        </div>
+                        <div class="p-6 pt-10">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Alastair Bard</h3>
+                                    <p class="text-pink-500 text-2xl font-bold">66</p>
+                                </div>
+                                <div class="text-pink-400">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 mt-4">Buying n searching for tickets has never been easier! The website had the best prices compared to other ticket selling platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button aria-label="Next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -mr-3 hover:bg-gray-50 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="text-center mt-8 text-gray-600">
+                <span class="inline-flex items-center gap-2">Have a thought? <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6 6L21 11l-6-6-6 6z"></path></svg></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
