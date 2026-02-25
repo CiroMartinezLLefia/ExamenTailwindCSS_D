@@ -34,20 +34,20 @@
         <div class="container mx-auto flex items-center justify-between">
             <a href="#" class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">ConcertHub</a>
             <div class="hidden md:flex items-center space-x-2" style="width: 626px; height: 56px;">
-                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                <a href="#" class="flex items-center text-gray-800 hover:text-black px-3">
                     <img src="imgs/call.png" alt="Contacto" class="w-5 h-5 mr-2">
                     <span>Contact us</span>
                 </a>
-                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                <a href="#" class="flex items-center text-gray-800 hover:text-black px-3">
                     <img src="imgs/ticket.png" alt="Ticket" class="w-5 h-5 mr-2">
                     <span>Ticket</span>
                 </a>
-                <a href="#" class="flex items-center text-gray-300 hover:text-black px-3">
+                <a href="#" class="flex items-center text-gray-800 hover:text-black px-3">
                     <img src="imgs/document.png" alt="Blogs" class="w-5 h-5 mr-2">
                     <span>Blogs</span>
                 </a>
                 <div class="relative inline-block">
-                    <button class="flex items-center text-gray-300 hover:text-black px-3 focus:outline-none">
+                    <button class="flex items-center text-gray-800 hover:text-black px-3 focus:outline-none">
                         <span class="mr-2">En</span>
                         <img src="imgs/arrowIcon.png" alt="chevron" class="w-4 h-4">
                     </button>
@@ -72,7 +72,7 @@
     </nav>
     <main class="max-w-7xl mx-auto px-6 py-12">
         <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-            <div class="flex flex-col justify-between">
+            <div class="hidden md:flex flex-col gap-8">
                 <div class="bg-white p-10 rounded-tr-3xl rounded-br-3xl md:rounded-tr-none md:rounded-br-none">
                     <h1 class="text-5xl font-bold text-[#FF0082] mb-4" style="font-family: 'Bonheur Royale', cursive;">Beyoncé Live in Concert!</h1>
                     <h2 class="text-2xl text-gray-700 mb-4">A Night to Remember!</h2>
@@ -81,7 +81,7 @@
                     <button class="bg-[#FF007A] text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-95 transition duration-200">Get Ticket</button>
                 </div>
 
-                <div class="mt-8 bg-gray-800 text-gray-200 p-8 rounded-2xl">
+                <div class="mt-8 bg-gray-800 text-gray-200 p-8 rounded-2xl md:mt-0">
                     <p class="text-lg mb-4">Find your favorite concert</p>
                     <div class="relative w-full max-w-lg">
                         <input type="text" placeholder="Search by Artist, Event or Venue" class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-700 placeholder-gray-300 text-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-pink-400">
@@ -100,46 +100,86 @@
 
             <div class="relative overflow-hidden rounded-3xl md:rounded-l-3xl md:rounded-r-none">
                 <img src="imgs/BannerPhoto.png" alt="Beyoncé Live in Concert" class="w-full h-full min-h-[520px] object-cover">
+                <div class="absolute left-0 right-0 bottom-0 md:hidden bg-white/80 backdrop-blur-sm p-4 rounded-b-3xl">
+                    <h1 class="text-2xl font-bold text-[#FF0082] mb-1" style="font-family: 'Bonheur Royale', cursive;">Beyoncé Live in Concert!</h1>
+                    <p class="text-sm text-gray-700">A Night to Remember!</p>
+                    <div class="mt-3">
+                        <button class="bg-[#FF007A] text-white px-4 py-2 rounded-full text-sm font-semibold">Get Ticket</button>
+                    </div>
+                </div>
+                <div class="pointer-events-none absolute left-0 right-0 bottom-0 h-24 md:hidden bg-gradient-to-t from-white/90 to-transparent rounded-b-3xl"></div>
+            </div>
+
+            <div class="md:hidden mt-6 bg-gray-800 text-gray-200 p-6 rounded-2xl">
+                <p class="text-lg mb-4">Find your favorite concert</p>
+                <div class="relative w-full">
+                    <input type="text" placeholder="Search by Artist, Event or Venue" class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-700 placeholder-gray-300 text-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-pink-400">
+                    <div class="absolute left-3 top-3 text-gray-400">
+                        <img src="imgs/arrowIcon.png" alt="search" class="w-5 h-5 opacity-50">
+                    </div>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-3">
+                    <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Summer</button>
+                    <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Jazz</button>
+                    <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#TaylorSwift</button>
+                    <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#NewYork</button>
+                </div>
             </div>
         </section>
 
          <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="section-title">Upcoming Concerts</h2>
-                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                    <a href="#" class="text-sm text-gray-800 hover:text-gray-950">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Carta concierto 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
                         <img src="imgs/Taylor.png" alt="Taylor Swift Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Taylor Swift</h3>
+                            <p class="text-xs text-white/90">New York City · Dec 14, 21:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Taylor Swift</h3>
                             <p class="text-sm text-gray-600">New York City</p>
                             <p class="text-sm text-gray-600">Dec 14, 21:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Celine.png" alt="Celine Dion Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Celine Dion</h3>
+                            <p class="text-xs text-white/90">San Francisco · Dec 13, 21:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Celine Dion</h3>
                             <p class="text-sm text-gray-600">San Francisco</p>
                             <p class="text-sm text-gray-600">Dec 13, 21:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Justin.png" alt="Justin Bieber Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Justin Bieber</h3>
+                            <p class="text-xs text-white/90">San Diego · Dec 16, 20:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Justin Bieber</h3>
                             <p class="text-sm text-gray-600">San Diego</p>
                             <p class="text-sm text-gray-600">Dec 16, 20:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 4 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Sila.png" alt="Sila Gencoglu Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Sila Gencoglu</h3>
+                            <p class="text-xs text-white/90">Boston · Dec 18, 22:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Sila Gencoglu</h3>
                             <p class="text-sm text-gray-600">Boston</p>
                             <p class="text-sm text-gray-600">Dec 18, 22:00</p>
@@ -151,40 +191,56 @@
          <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="section-title">Popular near you</h2>
-                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                    <a href="#" class="text-sm text-gray-800 hover:text-gray-950">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Carta concierto 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
                         <img src="imgs/Jennifer.png" alt="Jennifer Lopez Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Jennifer Lopez</h3>
+                            <p class="text-xs text-white/90">Seattle · Dec 12, 21:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Jennifer Lopez</h3>
                             <p class="text-sm text-gray-600">Seattle</p>
                             <p class="text-sm text-gray-600">Dec 12, 21:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Zack.png" alt="Zach Bryan Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Zach Bryan</h3>
+                            <p class="text-xs text-white/90">Miami · Dec 8, 22:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Zach Bryan</h3>
                             <p class="text-sm text-gray-600">Miami</p>
                             <p class="text-sm text-gray-600">Dec 8, 22:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Usher.png" alt="Usher Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Usher</h3>
+                            <p class="text-xs text-white/90">Los Angeles · Dec 4, 21:00</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Usher</h3>
                             <p class="text-sm text-gray-600">Los Angeles</p>
                             <p class="text-sm text-gray-600">Dec 4, 21:00</p>
                         </div>
                     </div>
                     <!-- Carta concierto 4 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden relative hidden sm:block">
                         <img src="imgs/Adele.png" alt="Adele Concert" class="w-full h-48 object-cover">
-                        <div class="p-4">
+                        <div class="absolute left-0 right-0 bottom-0 md:hidden bg-gradient-to-t from-black/75 to-transparent p-3 text-center">
+                            <h3 class="text-base font-semibold text-white">Adele</h3>
+                            <p class="text-xs text-white/90">Las Vegas · Dec 3, 21:35</p>
+                        </div>
+                        <div class="p-4 hidden md:block">
                             <h3 class="text-lg font-semibold text-gray-800">Adele</h3>
                             <p class="text-sm text-gray-600">Las Vegas</p>
                             <p class="text-sm text-gray-600">Dec 3, 21:35</p>
@@ -196,7 +252,7 @@
          <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="section-title">Explore by Category</h2>
-                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700">See All</a>
+                    <a href="#" class="text-sm text-gray-800 hover:text-gray-950">See All</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                     <!-- Carta categoría 1 -->
@@ -207,28 +263,28 @@
                         </div>
                     </div>
                     <!-- Carta categoría 2 -->
-                    <div class="relative rounded-lg overflow-hidden">
+                    <div class="relative rounded-lg overflow-hidden hidden sm:block">
                         <img src="imgs/Classic.png" alt="Classical Music" class="w-full h-48 object-cover">
                         <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
                             <h3 class="text-lg font-semibold text-white">Classical</h3>
                         </div>
                     </div>
                     <!-- Carta categoría 3 -->
-                    <div class="relative rounded-lg overflow-hidden">
+                    <div class="relative rounded-lg overflow-hidden hidden sm:block">
                         <img src="imgs/Pop.png" alt="Pop Music" class="w-full h-48 object-cover">
                         <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
                             <h3 class="text-lg font-semibold text-white">Pop</h3>
                         </div>
                     </div>
                     <!-- Carta categoría 4 -->
-                    <div class="relative rounded-lg overflow-hidden">
+                    <div class="relative rounded-lg overflow-hidden hidden sm:block">
                         <img src="imgs/Jazz.png" alt="Jazz Music" class="w-full h-48 object-cover">
                         <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
                             <h3 class="text-lg font-semibold text-white">Jazz</h3>
                         </div>
                     </div>
                     <!-- Carta categoría 5 -->
-                    <div class="relative rounded-lg overflow-hidden">
+                    <div class="relative rounded-lg overflow-hidden hidden sm:block">
                         <img src="imgs/Rock.png" alt="Rock Music" class="w-full h-48 object-cover">
                         <div class="absolute left-0 right-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-black/40 flex items-end justify-center p-3">
                             <h3 class="text-lg font-semibold text-white">Rock</h3>
@@ -239,32 +295,32 @@
 
           <section class="custom-section" data-top="24px">
                 <div class="flex items-center justify-between mb-6">
-                    <h2 class="section-title">Artists</h2>
+                    <h2 class="section-title">Artist</h2>
                 </div>
                 <div class="relative">
                     <div class="overflow-hidden">
                         <div class="flex items-center space-x-4 overflow-x-auto py-4 px-8">
-                            <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista1.png" alt="Artist 1" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista2.png" alt="Artist 2" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista3.png" alt="Artist 3" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista4.png" alt="Artist 4" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista5.png" alt="Artist 5" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista6.png" alt="Artist 6" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-shrink-0 w-32 h-32 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-white shadow">
-                                    <img src="imgs/artista7.png" alt="Artist 7" class="w-full h-full object-cover">
-                                </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista1.png" alt="Artist 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista2.png" alt="Artist 2" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista3.png" alt="Artist 3" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista4.png" alt="Artist 4" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista5.png" alt="Artist 5" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista6.png" alt="Artist 6" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-shrink-0 w-40 h-40 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-white shadow">
+                                <img src="imgs/artista7.png" alt="Artist 7" class="w-full h-full object-cover">
+                            </div>
                         </div>
                     </div>
                     <button aria-label="Scroll left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -ml-3 hover:bg-gray-50 focus:outline-none">
@@ -299,7 +355,7 @@
                         </div>
                     </div>
                     <!-- Carta 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hidden sm:block">
                         <img src="imgs/carta2.png" alt="News 2" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <div class="flex items-center justify-between mb-2">
@@ -314,7 +370,7 @@
                         </div>
                     </div>
                     <!-- Carta 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hidden sm:block">
                         <img src="imgs/carta3.png" alt="News 3" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <div class="flex items-center justify-between mb-2">
@@ -342,60 +398,60 @@
                         </button>
 
                         <div class="flex gap-6 pb-6">
-                            <!-- Card 1 -->
+                            <!-- Carta 1 -->
                             <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
                                 <div class="absolute -top-6 right-6 flex items-center gap-4">
                                     <h3 class="text-lg font-semibold text-gray-800">Sousan Cruse</h3>
                                     <img src="imgs/Sousan.jpg" alt="Sousan" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
                                 </div>
-                                <div class="p-6 pt-10">
-                                    <div class="flex items-start justify-between">
+                                <div class="p-6 pt-10 pb-10">
+                                    <div class="flex items-start gap-4">
                                         <div>
                                             <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
                                         </div>
-                                        <p class="text-gray-600 mt-4">highly recommended ! Here I can send my friends gift cards so they can buy their favourite concerts! This is how I surprised my gf &lt;3 &lt;3</p>
-                                        <div class="text-pink-400" style="transform: scaleX(-1);">
-                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
-                                        </div>
+                                        <p class="text-gray-600 flex-1 mx-3">highly recommended! Here I can send my friends gift cards so they can buy their favourite concerts! This is how I surprised my gf &lt;3 &lt;3</p>
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 text-pink-400" style="transform: scaleX(-1);">
+                                        <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Card 2 (quote flipped) -->
+                            <!-- Carta 2 -->
                             <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
                                 <div class="absolute -top-6 right-6 flex items-center gap-4">
                                     <h3 class="text-lg font-semibold text-gray-800">Paula Green</h3>
                                     <img src="imgs/Paula.jpg" alt="Paula" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
                                 </div>
-                                <div class="p-6 pt-10">
-                                    <div class="flex items-start justify-between">
+                                <div class="p-6 pt-10 pb-10">
+                                    <div class="flex items-start gap-4">
                                         <div>
                                             <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
                                         </div>
-                                        <p class="text-gray-600 mt-4">I have bought my tickets many times from here, the experience is great, having the ticket saved in my application was calming.</p>
-                                        <div class="text-pink-400" style="transform: scaleX(-1);">
-                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
-                                        </div>
+                                        <p class="text-gray-600 flex-1 mx-3">I have bought my tickets many times from here, the experience is great, having the ticket saved in my application was calming.</p>
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 text-pink-400" style="transform: scaleX(-1);">
+                                        <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Card 3 -->
+                            <!-- Carta 3 -->
                             <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
                                 <div class="absolute -top-6 right-6 flex items-center gap-4">
                                     <h3 class="text-lg font-semibold text-gray-800">Alastair Bard</h3>
                                     <img src="imgs/Alastair.jpg" alt="Alastair" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
                                 </div>
-                                <div class="p-6 pt-10">
-                                    <div class="flex items-start justify-between">
+                                <div class="p-6 pt-10 pb-10">
+                                    <div class="flex items-start gap-4">
                                         <div>
                                             <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
                                         </div>
-                                        <p class="text-gray-600 mt-4">Buying n searching for tickets has never been easier! The website had the best prices compared to other ticket selling platforms.</p>
-                                        <div class="text-pink-400" style="transform: scaleX(-1);">
-                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
-                                        </div>
-                                    </div>                                
+                                        <p class="text-gray-600 flex-1 mx-3">Buying n searching for tickets has never been easier! The website had the best prices compared to other ticket selling platforms.</p>
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 text-pink-400" style="transform: scaleX(-1);">
+                                        <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +519,7 @@
                             <li><a href="#" class="hover:underline">Rescheduled Events</a></li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-center mt-8 gap-4">
+                    <div class="flex flex-row items-center justify-center mt-8 gap-4 md:flex-col md:items-center">
                         <a href="#" class="hover:opacity-75">
                             <img src="imgs/instagram.png" alt="Instagram" class="w-6 h-6">
                         </a>
@@ -481,12 +537,10 @@
                         </a>
                     </div>
                 </div>
-                <!-- new column, a list of images (like socials), no text, only 5 images, insta, youtube, x, spotify, facebook, it will be top to bottom, not left to right -->
                 <div class="text-center mt-8 text-gray-600">
-                    <span class="inline-flex items-center gap-2">ConcertHub All Rights Reserved <img src="imgs/copyright.png" alt="copyright" class="w-4 h-4"></span>
+                    <span class="inline-flex items-center gap-2"> <img src="imgs/copyright.png" alt="copyright" class="w-4 h-4"> ConcertHub All Rights Reserved </span>
                 </div>
         </section>
-
     </footer>
 </body>
 </html>
