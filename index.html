@@ -31,9 +31,7 @@
                 <div class="relative inline-block">
                     <button class="flex items-center text-gray-300 hover:text-black px-3 focus:outline-none">
                         <span class="mr-2">En</span>
-                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <img src="imgs/arrowIcon.png" alt="chevron" class="w-4 h-4">
                     </button>
                 </div>
 
@@ -61,11 +59,9 @@
                     <p class="text-lg mb-4">Find your favorite concert</p>
                     <div class="relative w-full max-w-lg">
                         <input type="text" placeholder="Search by Artist, Event or Venue" class="w-full pl-10 pr-4 py-3 rounded-xl bg-gray-700 placeholder-gray-300 text-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-pink-400">
-                        <div class="absolute left-3 top-3 text-gray-400">
-                            <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </div>
+                                                <div class="absolute left-3 top-3 text-gray-400">
+                                                        <img src="imgs/arrowIcon.png" alt="search" class="w-5 h-5 opacity-50">
+                                                </div>
                     </div>
                     <div class="mt-6 flex flex-wrap gap-3">
                         <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">#Summer</button>
@@ -246,19 +242,15 @@
                         </div>
                     </div>
                     <button aria-label="Scroll left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -ml-3 hover:bg-gray-50 focus:outline-none">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
+                            <img src="imgs/arrowIcon.png" alt="left" class="w-5 h-5 rotate-180">
                     </button>
                     <button aria-label="Scroll right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -mr-3 hover:bg-gray-50 focus:outline-none">
-                        <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
+                            <img src="imgs/arrowIcon.png" alt="right" class="w-5 h-5">
                     </button>
                 </div>
           </section>
 
-          <section>
+          <section class="bg-[#282831]">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="text-3xl font-bold text-gray-800">The latest in music, tours & artists</h2>
                     <a href="#" class="text-sm text-gray-500 hover:text-gray-700">Explore All</a>
@@ -313,100 +305,146 @@
                 </div>
           </section>
 
-          
-    </main>
-    <!-- Testimonial Section -->
-    <section class="py-12 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">What our customers say</h2>
-            <p class="text-gray-600 mb-8">Real reviews from concert enthusiasts who love our service</p>
+            <section class="py-12 bg-gray-50">
+                <div class="max-w-6xl mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">What our customers say</h2>
+                    <p class="text-gray-600 mb-8">Real reviews from concert enthusiasts who love our service</p>
 
-            <div class="relative">
-                <button aria-label="Prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -ml-3 hover:bg-gray-50 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
+                    <div class="relative">
+                        <button aria-label="Prev" class="absolute left-0 top-1/2 -translate-y-1/2 text-gray-600 z-20 -ml-3">
+                            <img src="imgs/arrowIcon.png" alt="Prev" class="w-6 h-6 rotate-180">
+                        </button>
 
-                <div class="flex gap-6 overflow-x-auto pb-6">
-                    <!-- Card 1 -->
-                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
-                        <div class="absolute -top-8 left-6">
-                            <img src="imgs/artista1.png" alt="Avatar 1" class="w-16 h-16 rounded-full border-4 border-white shadow">
-                        </div>
-                        <div class="p-6 pt-10">
-                            <div class="flex items-start justify-between">
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Sousan Cruse</h3>
-                                    <p class="text-pink-500 text-2xl font-bold">66</p>
+                        <div class="flex gap-6 overflow-x-auto pb-6">
+                            <!-- Card 1 -->
+                            <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
+                                <div class="absolute -top-6 right-6">
+                                    <img src="imgs/Sousan.jpg" alt="Sousan" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
                                 </div>
-                                <div class="text-pink-400">
-                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
-                                    </svg>
+                                <div class="p-6 pt-10">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-800">Sousan Cruse</h3>
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                        <div class="text-pink-400">
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-600 mt-4">highly recommended ! Here I can send my friends gift cards so they can buy their favourite concerts! This is how I surprised my gf &lt;3 &lt;3</p>
                                 </div>
                             </div>
 
-                            <p class="text-gray-600 mt-4">highly recommended ! Here I can send my friends gift cards so they can buy their favourite concerts! This is how I surprised my gf &lt;3 &lt;3</p>
+                            <!-- Card 2 (quote flipped) -->
+                            <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
+                                <div class="absolute -top-6 right-6">
+                                    <img src="imgs/Paula.jpg" alt="Paula" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
+                                </div>
+                                <div class="p-6 pt-10">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-800">Paula Green</h3>
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                        <div class="text-pink-400" style="transform: scaleX(-1);">
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-600 mt-4">I have bought my tickets many times from here, the experience is great, having the ticket saved in my application was calming.</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="relative bg-white rounded-lg shadow-md overflow-visible w-80 flex-shrink-0">
+                                <div class="absolute -top-6 right-6">
+                                    <img src="imgs/Alastair.jpg" alt="Alastair" class="w-16 h-16 rounded-full border-4 border-white shadow z-10">
+                                </div>
+                                <div class="p-6 pt-10">
+                                    <div class="flex items-start justify-between">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-gray-800">Alastair Bard</h3>
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                        <div class="text-pink-400">
+                                            <img src="imgs/Quote.png" alt="quote" class="w-8 h-8">
+                                        </div>
+                                    </div>
+
+                                    <p class="text-gray-600 mt-4">Buying n searching for tickets has never been easier! The website had the best prices compared to other ticket selling platforms.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <button aria-label="Next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white text-gray-600">
+                            <img src="imgs/arrowIcon.png" alt="Next" class="w-6 h-6">
+                        </button>
                     </div>
 
-                    <!-- Card 2 (quote flipped) -->
-                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
-                        <div class="absolute -top-8 left-6">
-                            <img src="imgs/artista2.png" alt="Avatar 2" class="w-16 h-16 rounded-full border-4 border-white shadow">
-                        </div>
-                        <div class="p-6 pt-10">
-                            <div class="flex items-start justify-between">
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Paula Green</h3>
-                                    <p class="text-pink-500 text-2xl font-bold">66</p>
-                                </div>
-                                <div class="text-pink-400" style="transform: scaleX(-1);">
-                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <p class="text-gray-600 mt-4">I have bought my tickets many times from here, the experience is great, having the ticket saved in my application was calming.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="relative bg-white rounded-lg shadow-md overflow-hidden w-80 flex-shrink-0">
-                        <div class="absolute -top-8 left-6">
-                            <img src="imgs/artista3.png" alt="Avatar 3" class="w-16 h-16 rounded-full border-4 border-white shadow">
-                        </div>
-                        <div class="p-6 pt-10">
-                            <div class="flex items-start justify-between">
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Alastair Bard</h3>
-                                    <p class="text-pink-500 text-2xl font-bold">66</p>
-                                </div>
-                                <div class="text-pink-400">
-                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.17 6.17A5 5 0 0012 4v4a3 3 0 01-3 3H6a1 1 0 01-1-1V7a1 1 0 011-1h1.17zM17.17 6.17A5 5 0 0022 4v4a3 3 0 01-3 3h-3a1 1 0 01-1-1V7a1 1 0 011-1h1.17z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <p class="text-gray-600 mt-4">Buying n searching for tickets has never been easier! The website had the best prices compared to other ticket selling platforms.</p>
-                        </div>
+                    <div class="text-center mt-8 text-gray-600">
+                        <span class="inline-flex items-center gap-2">Have a thought? <img src="imgs/havathought.png" alt="views" class="w-4 h-4 mr-1 inline-block"> </span>
                     </div>
                 </div>
+            </section>
+    </main>
 
-                <button aria-label="Next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white text-gray-600 rounded-full p-2 shadow z-20 -mr-3 hover:bg-gray-50 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="text-center mt-8 text-gray-600">
-                <span class="inline-flex items-center gap-2">Have a thought? <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6 6L21 11l-6-6-6 6z"></path></svg></span>
-            </div>
-        </div>
-    </section>
+    <footer>
+        <section>
+            <div class="bg-[#282831] text-gray-300 py-12">
+                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Let's keep in touch</h3>
+                        <p class="text-sm mb-4">Stay updated with Concert Hub's latest news and exclusive offers!</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Enter your email address" class="w-full px-4 py-2 rounded-l-lg bg-gray-700 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <button class="bg-[#FF007A] text-white px-4 py-2 rounded-r-lg hover:opacity-95 transition duration-200">Subscribe Now</button>
+                        </div>
+                        <p class="text-xs mt-2">By subscribing, you agree to our <a href="#" class="underline text-gray-300 hover:text-gray-100">terms and conditions</a> & <a href="#" class="underline text-gray-300 hover:text-gray-100">Privacy Policy</a></p>
+                        <div class="flex mt-4 gap-4">
+                            <a href="#" class="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">
+                                <img src="imgs/googleplay.png" alt="Google Play" class="w-5 h-5">
+                                <span class="text-sm">Download on the Google Play</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">
+                                <img src="imgs/appstore.png" alt="App Store" class="w-5 h-5">
+                                <span class="text-sm">Download on the App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Concert Hub</h3>
+                        <ul class="text-sm space-y-2">
+                            <li><a href="#" class="hover:underline">About us</a></li>
+                            <li><a href="#" class="hover:underline">Careers</a></li>
+                            <li><a href="#" class="hover:underline">Press</a></li>
+                            <li><a href="#" class="hover:underline">Getting there</a></li>
+                            <li><a href="#" class="hover:underline">Privacy policy</a></li>
+                            <li><a href="#" class="hover:underline">Terms & conditions</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Looking For Help</h3>
+                        <ul class="text-sm space-y-2">
+                            <li><a href="#" class="hover:underline">FAQs</a></li>
+                            <li><a href="#" class="hover:underline">Help Center</a></li>
+                            <li><a href="#" class="hover:underline">Contact Us</a></li>
+                            <li><a href="#" class="hover:underline">Customer Service</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Looking For More</h3>
+                        <ul class="text-sm space-y-2">
+                            <li><a href="#" class="hover:underline">Cancelled Concerts</a></li>
+                            <li><a href="#" class="hover:underline">Cancellation Insurance</a></li>
+                            <li><a href="#" class="hover:underline">Rescheduled Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-8 text-gray-600">
+                    <span class="inline-flex items-center gap-2">ConcertHub All Rights Reserved <img src="imgs/copyright.png" alt="copyright" class="w-4 h-4"></span>
+                </div>
+        </section>
+    </footer>
 </body>
 </html>
